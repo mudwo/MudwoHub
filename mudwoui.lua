@@ -11,37 +11,37 @@ getgenv().Nousigi = true
 
 local DisableAnimation = game.Players.LocalPlayer.PlayerGui:FindFirstChild('TouchGui')
 local T1UIColor = {
-	["Border Color"] = Color3.fromRGB(255, 206, 27),
+	["Border Color"] = Color3.fromRGB(0, 220, 90),
 	["Click Effect Color"] = Color3.fromRGB(230, 230, 230),
 	["Setting Icon Color"] = Color3.fromRGB(230, 230, 230),
-	["Logo Image"] = "rbxassetid://109404855166013",
+	["Logo Image"] = "rbxassetid://73617732066264",
 	["Search Icon Color"] = Color3.fromRGB(240, 240, 230),
-	["Search Icon Highlight Color"] = Color3.fromRGB(255, 206, 27),
+	["Search Icon Highlight Color"] = Color3.fromRGB(0, 220, 90),
 	["GUI Text Color"] = Color3.fromRGB(235, 235, 230),
 	["Text Color"] = Color3.fromRGB(235, 235, 230),
 	["Placeholder Text Color"] = Color3.fromRGB(170, 170, 160),
-	["Title Text Color"] = Color3.fromRGB(255, 206, 27),
+	["Title Text Color"] = Color3.fromRGB(0, 220, 90),
 	["Background Main Color"] = Color3.fromRGB(18, 18, 22),
 	["Background 1 Color"] = Color3.fromRGB(28, 28, 34),
 	["Background 1 Transparency"] = 0.1,
 	["Background 2 Color"] = Color3.fromRGB(38, 38, 46),
 	["Background 3 Color"] = Color3.fromRGB(48, 48, 56),
 	["Background Image"] = "",
-	["Page Selected Color"] = Color3.fromRGB(255, 206, 27),
+	["Page Selected Color"] = Color3.fromRGB(0, 220, 90),
 	["Section Text Color"] = Color3.fromRGB(220, 220, 210),
-	["Section Underline Color"] = Color3.fromRGB(255, 206, 27),
-	["Toggle Border Color"] = Color3.fromRGB(255, 206, 27),
+	["Section Underline Color"] = Color3.fromRGB(0, 220, 90),
+	["Toggle Border Color"] = Color3.fromRGB(0, 220, 90),
 	["Toggle Checked Color"] = Color3.fromRGB(230, 230, 230),
 	["Toggle Desc Color"] = Color3.fromRGB(185, 185, 185),
-	["Button Color"] = Color3.fromRGB(255, 206, 27),
+	["Button Color"] = Color3.fromRGB(0, 220, 90),
 	["Label Color"] = Color3.fromRGB(38, 38, 42),
 	["Dropdown Icon Color"] = Color3.fromRGB(230, 230, 230),
-	["Dropdown Selected Color"] = Color3.fromRGB(255, 206, 27),
-	["Dropdown Selected Check Color"] = Color3.fromRGB(219, 177, 23),
-	["Textbox Highlight Color"] = Color3.fromRGB(255, 206, 27),
-	["Box Highlight Color"] = Color3.fromRGB(255, 206, 27),
-	["Slider Line Color"] = Color3.fromRGB(255, 206, 27),
-	["Slider Highlight Color"] = Color3.fromRGB(194, 156, 20),
+	["Dropdown Selected Color"] = Color3.fromRGB(0, 220, 90),
+	["Dropdown Selected Check Color"] = Color3.fromRGB(0, 175, 72),
+	["Textbox Highlight Color"] = Color3.fromRGB(0, 220, 90),
+	["Box Highlight Color"] = Color3.fromRGB(0, 220, 90),
+	["Slider Line Color"] = Color3.fromRGB(0, 220, 90),
+	["Slider Highlight Color"] = Color3.fromRGB(0, 150, 60),
 	["Tween Animation 1 Speed"] = DisableAnimation and 0 or 0.25,
 	["Tween Animation 2 Speed"] = DisableAnimation and 0 or 0.5,
 	["Tween Animation 3 Speed"] = DisableAnimation and 0 or 0.1,
@@ -336,7 +336,7 @@ local libCreateNoti = function(Setting)
 	local colorG = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[2])
 	local colorB = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[3])
 	local color = colorR .. ',' .. colorG .. ',' .. colorB
-    TextLabelNoti.Text = "<font color=\"rgb(" .. tostring(color or "255,206,27") .. ")\">" .. tostring("Mudwo Hub") .. "</font> " .. tostring(getgenv().TitleNameNoti or "")
+    TextLabelNoti.Text = "<font color=\"rgb(" .. tostring(color or "0,220,90") .. ")\">" .. tostring("Abacatudo Hub") .. "</font> " .. tostring(getgenv().TitleNameNoti or "")
     
 	TextLabelNoti.Name = "TextLabelNoti"
 	TextLabelNoti.Parent = Topnoti
@@ -443,7 +443,7 @@ function Library:Notify(Setting, bypass)
 end
 
 function Library:CreateWindow(Setting)
-    local TitleNameMain = Setting.Title or "Mudwo Hub"
+    local TitleNameMain = Setting.Title or "Abacatudo Hub"
     getgenv().MainDesc = Setting.Desc or Setting.Subtitle or ""
     
     if Setting.Image then
@@ -578,7 +578,7 @@ function Library:CreateWindow(Setting)
 	local colorG = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[2])
 	local colorB = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[3])
 	local color = colorR .. ',' .. colorG .. ',' .. colorB
-    TextLabelMain.Text = "<font color=\"rgb(" .. tostring(color or "255,206,27") .. ")\">" .. tostring(TitleNameMain or "Mudwo Hub") .. "</font> " .. tostring(getgenv().MainDesc or "")
+    TextLabelMain.Text = "<font color=\"rgb(" .. tostring(color or "0,220,90") .. ")\">" .. tostring(TitleNameMain or "Abacatudo Hub") .. "</font> " .. tostring(getgenv().MainDesc or "")
 
 	PageControl.Name = "Background1"
 	PageControl.Parent = Concacmain
@@ -1362,7 +1362,7 @@ function Library:CreateWindow(Setting)
 				check.Name = "check"
 				check.Parent = checkbox
 				check.AnchorPoint = Vector2.new(0.5, 0.5)
-				check.BackgroundColor3 = Color3.fromRGB(255, 206, 27)
+				check.BackgroundColor3 = Color3.fromRGB(0, 220, 90)
 				check.Position = UDim2.new(0.5, 0, 0.5, 0)
 				local cac = 5
 				if Desc then
@@ -1528,7 +1528,7 @@ function Library:CreateWindow(Setting)
              ClickArea_1.Name = "ClickArea"
              ClickArea_1.Parent = RowBG_1
              ClickArea_1.AnchorPoint = Vector2.new(1, 0.5)
-             ClickArea_1.BackgroundColor3 = Color3.fromRGB(255, 206, 27)
+             ClickArea_1.BackgroundColor3 = Color3.fromRGB(0, 220, 90)
              ClickArea_1.Position = UDim2.new(1, -8,0.5, 0)
              ClickArea_1.Size = UDim2.new(0, 94,0, 30)
              ClickArea_1.ClipsDescendants = true  -- THÊM DÒNG NÀY: Ngăn ripple tràn ra
@@ -1538,10 +1538,10 @@ function Library:CreateWindow(Setting)
              
              UIGradient_1.Parent = ClickArea_1
              UIGradient_1.Color = ColorSequence.new{
-                 ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 216, 77)), 
-                 ColorSequenceKeypoint.new(0.4, Color3.fromRGB(255, 206, 27)), 
-                 ColorSequenceKeypoint.new(0.6, Color3.fromRGB(235, 186, 17)), 
-                 ColorSequenceKeypoint.new(1, Color3.fromRGB(215, 166, 7))
+                 ColorSequenceKeypoint.new(0, Color3.fromRGB(60, 240, 140)),
+                 ColorSequenceKeypoint.new(0.4, Color3.fromRGB(0, 220, 90)), 
+                 ColorSequenceKeypoint.new(0.6, Color3.fromRGB(0, 190, 75)), 
+                 ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 165, 60))
              }
              UIGradient_1.Rotation = 90
              
