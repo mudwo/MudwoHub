@@ -1,4 +1,4 @@
--- discord.gg/syncrypt
+
 
 local function geniter(f, s, c)
 	if type(f) ~= "function" then
@@ -2280,9 +2280,9 @@ end
 
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/mudwo/MudwoHub/refs/heads/main/mudwoui.lua"))()
 local v237 = lib:CreateWindow({
-	Title = "Mudwo Hub",
+	Title = "Abacatudo Hub",
 	Subtitle = "Blox Fruit Script",
-	Image = "rbxassetid://127669862710230"
+	Image = "rbxassetid://73617732066264"
 })
 local t15 = {
 	Info = v237:AddTab("Info And Status"),
@@ -31470,8 +31470,8 @@ do
 end
 
 lib:Notify({
-	Title = "Mudwo Hub",
-	Description = "Mudwo Hub comeback",
-	Icon = "rbxassetid://109404855166013",
+	Title = "Abacatudo Hub",
+	Description = "Abacatudo Hub pronto",
+	Icon = "rbxassetid://73617732066264",
 	Duration = 5
 })
